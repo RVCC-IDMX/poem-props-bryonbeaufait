@@ -7,17 +7,20 @@
 .hero {
     padding: var(--size-2);
     display: grid;
-    gap:var(--size-2);
+    gap: var(--size-2);
     place-items: top;
     place-content: center;
-    overflow: hidden;
-
 
     @include mixins.simple-grid(1rem);
-    grid-template: "container";
 
-    >* {
-        grid-area: container;
-        margin-inline: auto;
+    &_title {
+        text-align: center;
+        color: var(--cyan-5);
     }
+    // grid-template: "container";
+
+    // >* {
+    //     grid-area: container;
+    //     margin-inline: auto;
+    // }
 }
