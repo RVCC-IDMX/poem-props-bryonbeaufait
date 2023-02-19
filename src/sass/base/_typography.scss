@@ -1,8 +1,16 @@
 /* typography */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
-$font: "Poppins", serif;
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400 700;
+    src: url('../fonts/Caveat-VariableFont_wght.ttf') format('truetype');
+}
+
+
+$font: "Caveat", handwriting;
 
 // body font styling vars
 $body-font-size: 120%;
@@ -11,6 +19,6 @@ $body-italic-weight: 100;
 
 // display font styling vars
 $display-font: $font;
-$display-weight: 900;
+$display-weight: 400;
 $display-spacing: 0.15em;
 $display-title-size: 4rem;

@@ -1,0 +1,15 @@
+@use "../abstracts/mixins" as mixins;
+@use "../base/typography" as font;
+
+body {
+  font-family: font.$font;
+}
+
+
+body {
+    @include mixins.simple-grid(2rem);
+    width: min(100% - 2rem, 60ch);
+    margin-inline: auto;
+    padding-block: 1rem;
+}
+
